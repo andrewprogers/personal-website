@@ -3,10 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Andrew Rogers</title>
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/app.css">
   </head>
   <body>
-    <div id="wrapper" class="">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Site Title</li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="wrapper" class="columns">
       <%= yield %>
     </div>
+
+
+    <script src="/js/vendor/jquery.js" charset="utf-8"></script>
+    <script src="/js/vendor/foundation.js" charset="utf-8"></script>
+    <script src="/js/vendor/what-input.js" charset="utf-8"></script>
   </body>
 </html>
